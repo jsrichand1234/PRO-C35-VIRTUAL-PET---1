@@ -28,12 +28,12 @@ function draw() {
     textSize("25");
     text("Food Remaining: "+foodS, 150,150);
 
-    if(keyWentDown("space")){
+    if(keyWentDown(UP_ARROW)){
       writeStock(foodS);
       dog.addImage(happyDogImg);
     }
 
-    if(keyWentUp("space")){
+    if(keyWentUp(UP_ARROW)){
       dog.addImage(dogImg);
     }
   
